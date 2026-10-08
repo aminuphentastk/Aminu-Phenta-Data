@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aminu Phenta Data</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7f5;
+      color: #17201a;
+    }
+
+    header {
+      background: #087f3f;
+      color: white;
+      padding: 25px 20px;
+      border-radius: 0 0 25px 25px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      margin-bottom: 6px;
+    }
+
+    header p {
+      opacity: 0.9;
+    }
+
+    .wallet {
+      background: white;
+      margin: -25px 20px 20px;
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .wallet small {
+      color: #666;
+    }
+
+    .balance {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 8px 0 15px;
+    }
+
+    button {
+      border: none;
+      background: #087f3f;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 10px 20px;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .service {
+      background: white;
+      padding: 22px 15px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    }
+
+    .icon {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .service h3 {
+      font-size: 16px;
+    }
+
+    .plans {
+      margin-top: 20px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .plan {
+      background: white;
+      padding: 16px;
+      border-radius: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .plan button {
+      padding: 9px 13px;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #777;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>📶 Aminu Phenta Data</h1>
+    <p>Fast & Reliable Data Services</p>
+  </header>
+
+  <div class="wallet">
+    <small>Wallet Balance</small>
+    <div class="balance">₦0.00</div>
+    <button onclick="fundWallet()">💰 Fund Wallet</button>
+  </div>
+
+  <div class="section">
+    <h2>Services</h2>
+
+    <div class="services">
+
+      <div class="service">
+        <div class="icon">📶</div>
+        <h3>Buy Data</h3>
+      </div>
+
+      <div class="service">
+        <div class="icon">📞</div>
+        <h3>Airtime</h3>
+      </div>
+
+      <div class="service">
+        <div class="icon">📜</div>
+        <h3>Transactions</h3>
+      </div>
+
+      <div class="service">
+        <div class="icon">🆘</div>
+        <h3>Support</h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Popular Data Plans</h2>
+
+    <div class="plans">
+
+      <div class="plan">
+        <div>
+          <strong>MTN 1GB</strong>
+          <br>
+          <small>30 Days</small>
+        </div>
+        <button onclick="buyData('MTN 1GB')">₦300</button>
+      </div>
+
+      <div class="plan">
+        <div>
+          <strong>MTN 2GB</strong>
+          <br>
+          <small>30 Days</small>
+        </div>
+        <button onclick="buyData('MTN 2GB')">₦600</button>
+      </div>
+
+      <div class="plan">
+        <div>
+          <strong>Airtel 1GB</strong>
+          <br>
+          <small>30 Days</small>
+        </div>
+        <button onclick="buyData('Airtel 1GB')">₦300</button>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Aminu Phenta Data
+  </footer>
+
+  <script>
+    function fundWallet() {
+      alert("Wallet funding will be connected to a payment gateway later.");
+    }
+
+    function buyData(plan) {
+      alert("You selected: " + plan + 
+            "\n\nVTU API will be connected in the next stage.");
+    }
+  </script>
+
+</body>
+</html>
